@@ -1,0 +1,44 @@
+@font-face {
+  font-family: HoboStd;
+  src: url("../fonts/HoboStd.otf") format("opentype");
+}
+
+.row {
+  max-width: 900px;
+}
+
+.nav-wrapper {
+  text-align:center;
+  background:#e6e6e6;
+}
+
+.nav-wrapper nav.top-bar {
+  display:inline-block;
+}
+
+li.menu-text {
+  font-family: HoboStd;
+  font-size: 1.5rem;
+  color: #3E9DFE;
+}
+
+img {
+  margin-top: .9375rem;
+  margin-bottom: .9375rem;
+}
+
+a.new-image,
+a.report,
+a.warning {
+  width: 100%;
+}
+
+a.new-image {
+  margin-top: .9375rem;
+}
+
+ a.button.report,
+ a.button.share {
+   padding-left: 10px;
+   padding-right: 10px;
+ }

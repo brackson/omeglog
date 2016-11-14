@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="large-9 columns">
+    <div id="log">
+      <img id="omegle_image" img-id='<%= @log %>' src="http://l.omegle.com/<%= @log %>.png">
+    </div>
+  </div>
+  <div class="large-3 columns sidebar">
+    <a class="button new-image">Generate a New Image</a>
+    <div class="row">
+      <div class="large-6 columns">
+        <a class="button alert report">Report</a>
+      </div>
+      <!-- <div class="large-6 columns">
+        <a class="button warning share">Twitter</a>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<div class="reveal" id="modal" data-reveal data-close-on-click="true">
+  <h3>Disclaimer:</h3>
+  <p>This website hosts thousands of Omegle logs, all of which have been scraped from random places on the internet.
+  It is impossible to review every one. Please report any logs that are exteremely offensive or include people under 18.</p>
+  <p>Thanks.</p>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

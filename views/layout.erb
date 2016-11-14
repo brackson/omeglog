@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Omeglog: Random Omegle Logs</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="stylesheets/foundation.min.css">
+    <link rel="stylesheet" href="stylesheets/application.css">
+    <script src="javascripts/jquery-1.11.3.min.js"></script>
+    <script src="javascripts/simple_inheritance.min.js"></script>
+    <script src="javascripts/js.cookie.js"></script>
+    <script src="javascripts/application.min.js"></script>
+  </head>
+  <body>
+    <%= erb :topbar %>
+    <%= yield %>
+    <script src="javascripts/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
