@@ -6,6 +6,8 @@ require './models'
 use Rack::Static, :urls => ["/images", "/javascripts", "/stylesheets", "/fonts"], :root => "assets"
 use Rack::Throttle::Daily,    :max => 200
 
+set :database, "sqlite3:omeglog.sqlite3"
+
 get '/' do
   @log = Log.offset(rand(Log.count)).first['url']
   erb :index
